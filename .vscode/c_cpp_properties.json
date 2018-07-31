@@ -4,14 +4,15 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "C:/users/isaac/Documents/Arduino/libraries"
+                "C:/users/isaac/Documents/Arduino/libraries",
+                "C:/Users/isaac/Documents/Arduino/libraries/Scheduler/src"
             ],
             "defines": [
                 "_DEBUG",
                 "UNICODE",
                 "_UNICODE"
             ],
-            "windowsSdkVersion": "",
+            "windowsSdkVersion": "10.0.17134.0",
             "intelliSenseMode": "clang-x64"
         }
     ],
