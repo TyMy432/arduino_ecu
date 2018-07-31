@@ -9,6 +9,7 @@
                 "C:/users/isaac/Documents/Arduino/libraries",
                 "C:/Users/isaac/Documents/Arduino/libraries/Scheduler/src",
                 "C:/Users/isaac/AppData/Local/Arduino15/packages/arduino/hardware/sam/1.6.11/cores/arduino",
+                "D:/arduino_ecu",
                 "${workspaceFolder}",
                 "${workspaceFolder}"
             ],

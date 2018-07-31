@@ -1,7 +1,8 @@
 //THIS IS THE MAIN CONFIG FILE.  BE CAREFUL.
 //Variables that appear commented are not yet used, and will be potentially expanded upon
 void config(){
-#include <Injector_Config>
+
+#include <Injector_Config.cpp>
 
 
 
@@ -20,14 +21,14 @@ float injSize =    00                         ; //Defines the injector flow rate
 float gasPress =   00                         ; //Defines the normal operating fuel pressure *add units
 float gPressAllow= 00                         ; //Defines the % tolerance for fuel pressure
 //  int injNum =       1                          ; //Defines number of injectors per cylinder, default is 1, ??expansion into multiple injector sizes??
-injConfig()                                   ; //This function calls the injector settings config file
+
+int injPWMLimit[] = {   40 , 255 }            ; //Defines the injector PWN signal limits in order of Lowest, Highest  
+Injector_Config()                                   ; //This function calls the injector settings config file
 
 
 
-
-
-//AUTO CALCULATED VALUES
-int cylDisp = disp / cylNum ;                //Per-cylinder displacement
+//AUTO CALCULATED VALUES"
+float cylDisp = 'disp' / 'cylNum' ;                //Per-cylinder displacement
 
 
 
