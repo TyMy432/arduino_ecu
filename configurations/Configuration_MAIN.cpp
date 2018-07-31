@@ -17,8 +17,8 @@ float cam[] ={     0.00, 0.00 , 0.00 , 0.00 } ; //Defines the cam lift and durat
 
 //                                  ***FUEL SYSTEM INFORMATIOIN***
 
-float injSize =    00                         ; //Defines the injector flow rate       *add units
-float gasPress =   00                         ; //Defines the normal operating fuel pressure *add units
+float injSize =    00                         ; //Defines the injector flow rate (liters per minute)       
+float gasPress =   00                         ; //Defines the normal operating fuel pressure (bar)
 float gPressAllow= 00                         ; //Defines the % tolerance for fuel pressure
 //  int injNum =       1                          ; //Defines number of injectors per cylinder, default is 1, ??expansion into multiple injector sizes??
 

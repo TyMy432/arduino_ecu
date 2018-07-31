@@ -16,16 +16,19 @@
   Serial.begin(9600);             //Initializes serial
   Serial.print("Initializing...");
 
-    loopDefine()  ;                 //These functions define all the variables and algorithems for the 5 main program loops.
-    loop2Define() ;
-    loop3Define() ;
-    loop4Define() ;
-    loop5Define() ;
+  Serial.print("Calling main configuration...");
+
+    startUp() ;                    //This function calls the Main configuration, and includes any other procedures you wish to run at startup
+
+      loopDefine()  ;              //These functions define all the variables and call the algorithems for the 5 main program loops.
+      loop2Define() ;
+      loop3Define() ;
+      loop4Define() ;
+      loop5Define() ;
     
   Serial.print("Defined Main Loops...");
 
-      startUp() ;                    //This function calls the Main configuration, and includes any other procedures you wish to run at startup
-      
+
   Serial.print("Startup procedure complete...");
 
   //This section is responsible for initializing loops 2-5, loop is started automatically.
