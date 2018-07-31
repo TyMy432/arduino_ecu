@@ -7,7 +7,6 @@ void Test(){                                   //eventually, a value pasNum will
     
     int returned ;                             //a simple int for holding a returned value from a tested function
       
-      Serial.begin(9600);
       Serial.print("Beginning self test...");
 
   //When the initial backbone code is written, this function will be written and tied in.
