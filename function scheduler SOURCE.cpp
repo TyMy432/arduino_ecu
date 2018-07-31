@@ -1,10 +1,13 @@
 
 #include <Scheduler.h>
+#include <startUp.cpp>
+#include <Test>
+
 
  void setup() {
    // put your setup code here, to run once:
   
-
+  startUp() ;
 
 
    Scheduler.startLoop(Loop2);     //Loop2 controls running condition sensor inputs and interpretation

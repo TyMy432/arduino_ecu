@@ -3,10 +3,13 @@
 
 
 
-void Test(int pasNum){  //pasNum identifies the level of self-test, e.g. levels 1-4
+void Test(){  //eventually, a value pasNum will identify the level of self-test, e.g. levels 1-4
     
     int returned ;                             //a simple int for holding a returned value from a tested function
-    
+  
+  //When the initial backbone code is written, this function will be written and tied in.
+
+  //This function may only be used to configure the self test paramaters, the test itself may run in loop instead of all in this function.
 
 
 }
