@@ -3,7 +3,7 @@
 #include <test>
 
 void startUp (){
-
-        Test() ;    //startUp calls the self test.
+    
+        Test() ;    //startUp calls the self test.  Probably best to leave this until the groundwork is layed
     
 }

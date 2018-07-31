@@ -2,12 +2,17 @@
 #include <Scheduler.h>
 #include <startUp.cpp>
 #include <Test>
-
+#include <startup_maps.cpp>
+#include <Configuration_MAIN.cpp>
 
  void setup() {
    // put your setup code here, to run once:
-  
-  startUp() ;
+  Serial.begin(9600);             //Initializes serial
+  Serial.print("Initializing...");
+
+
+    startUp() ;
+
 
 
    Scheduler.startLoop(Loop2);     //Loop2 controls running condition sensor inputs and interpretation
