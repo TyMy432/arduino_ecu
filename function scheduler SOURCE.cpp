@@ -21,7 +21,7 @@
    Scheduler.startLoop(Loop5);     //Loop5 fires the injectors and ignition
  }
 
- void loop() {                     //loop runs mics. functions and can handel offloaded tasks from all other loops
+ void loop() {                     //loop runs mics. functions and can handle offloaded tasks from all other loops
  
 
  }
