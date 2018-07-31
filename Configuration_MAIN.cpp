@@ -22,12 +22,16 @@ float gasPress =   00                         ; //Defines the normal operating f
 float gPressAllow= 00                         ; //Defines the % tolerance for fuel pressure
 //  int injNum =       1                          ; //Defines number of injectors per cylinder, default is 1, ??expansion into multiple injector sizes??
 
-int injPWMLimit[] = {   40 , 255 }            ; //Defines the injector PWN signal limits in order of Lowest, Highest  
-Injector_Config()                                   ; //This function calls the injector settings config file
+//int injPWMLimit[] = {   40 , 255 }            ; //Defines the injector PWN signal limits in order of Lowest, Highest  
+int injDutyCyc =   80                         ; //Defines the safe duty cycle for the injectors, default is 80%
+float injFlow =    20                         ; //Defines the injector flow rate (milimeters per second)
+float flowPress =  3                          ; //Defines the pressure that the injectors were flow tested at, default is 3 bar (44.1 psi) 
+
+injector_config()                             ; //This function calls the injector settings config file, which handles running settings
 
 
 
-//AUTO CALCULATED VALUES"
+//AUTO CALCULATED VALUES
 float cylDisp = 'disp' / 'cylNum' ;                //Per-cylinder displacement
 
 
