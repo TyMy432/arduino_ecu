@@ -1,0 +1,10 @@
+//This function sends test vaules to all loop functions, and compaires the returned values to the expected, pre-calculated result.
+//If a function is not intended to return a value, it initiates a *hopefully* mini-test in the function itself and returns a pass or fail.
+
+
+
+void Test(){
+
+
+
+}
