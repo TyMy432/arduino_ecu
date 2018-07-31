@@ -3,8 +3,10 @@
 
 
 
-void Test(){
-
+void Test(int pasNum){  //pasNum identifies the level of self-test, e.g. levels 1-4
+    
+    int returned ;                             //a simple int for holding a returned value from a tested function
+    
 
 
 }
