@@ -3,5 +3,5 @@
 
 void startMap(){
 
-    //This will be a few algorithems based on tempratures and 
+    //This will be a few algorithems based on tempratures and other startup conditions.
 }
