@@ -12,7 +12,7 @@
 #include <define_LOOP5.cpp>
 
  void setup() {
-   // put your setup code here, to run once:
+   
   Serial.begin(9600);             //Initializes serial
   Serial.print("Initializing...");
 
@@ -41,27 +41,46 @@
   Serial.print("System ready");
  }
 
- void loop() {                     //loop runs misc. functions and can handle offloaded tasks from all other loops
- 
+//                                                        THE FOLOWING ARE THE 5 MAIN LOOPS.  THEY ARE RESPONSIBLE FOR CALLING ALL THE
+//                                                        OTHER FUNCTIONS, AND ARE THE MAIN ARCHETECTURE.
+
+
+ void loop() {                     
+//    This loop runs misc. functions when called to, and can handle offloaded tasks from all other loops.
+//    However, it will include no provisions for acting on the return of a function, instead it must relay it foreward to the loop which requested the function be called.
+//    It also is responsible for schedualing internal updates of the running maps.
 
  }
 
- void Loop2(){
-
+ void Loop2(){                     
+//    This loop is responsible for reading running condition sensors, interpreting their signals and storing the values in the appropriate locations as defined in loop2Define().
+//    For now, the sensors will be read twice a second.  However, eventually it will be a definable interval.
 
  }
 
  void Loop3(){
-
+//    This loop is responsible for calculating the current fuel/air/timing maps based on the data from loop2.
+//    It stores the re-calculated maps in a temporary location, until it is transferred into the main location and used by loop4.
+//    This prevents the maps from being updated during an injector calculation.
 
  }
 
  void Loop4(){
-
+//    This loop calculates injection and ignition timing based on the maps calculated by loop3 and the current readout of the Throttle Position Sensor.
+//    It also periodically notifies loop when it is idle, so that the re-calculated maps can be made active without interrupting the injector calculations.
 
  }
+ //                                                                   *****************
+ //                                  Everything above loop5 are internal calculations, dealing with general settings.
+ //                                  loop5 is where that data is split up for the individual cylinders.
+ //                                  Therefor, any single-cylinder modifier functions are called from loop5, immediatly before the physical event.
+ //                                  This is important to understand when adding custom per-cylinder tunes, in that any such customizations will be applied
+ //                                  TO the main configuration, and NOT in place of it.
+ //                                                                   *****************
+
 
  void Loop5(){
-
+//    This loop is responsible for sending the injector and ignition signals out of the ECU, into the MOSFET amplifiers to trigger the injection and spark events.
+//    It bases function timing on the Crankshaft position sensor, and tracks which cylinder is recieving an event.
 
  }

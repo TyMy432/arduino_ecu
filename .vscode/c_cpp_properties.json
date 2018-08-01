@@ -14,7 +14,10 @@
                 "${workspaceFolder}",
                 "${workspaceFolder}/configurations",
                 "${workspaceFolder}/Define functions",
-                "${workspaceFolder}/Fuel Algorithems"
+                "${workspaceFolder}/Fuel Algorithems",
+                "${workspaceFolder}/initialization routines/configurations",
+                "${workspaceFolder}/self tests",
+                "${workspaceFolder}/initialization routines"
             ],
             "defines": [
                 "_DEBUG",
