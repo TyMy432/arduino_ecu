@@ -10,6 +10,7 @@
 #include <define_LOOP3.cpp>
 #include <define_LOOP4.cpp>
 #include <define_LOOP5.cpp>
+#include <hwconfig.cpp>
 
  void setup() {
    
@@ -70,6 +71,8 @@
 //    It also periodically notifies loop when it is idle, so that the re-calculated maps can be made active without interrupting the injector calculations.
 
  }
+
+
  //                                                                   *****************
  //                                  Everything above loop5 are internal calculations, dealing with general settings.
  //                                  loop5 is where that data is split up for the individual cylinders.

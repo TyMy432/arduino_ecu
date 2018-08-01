@@ -1,4 +1,5 @@
 {
     "board": "arduino:sam:arduino_due_x_dbg",
-    "sketch": "Function scheduler\\function scheduler SOURCE.ino"
+    "sketch": "function scheduler SOURCE\\function scheduler SOURCE.ino",
+    "port": "COM5"
 }
