@@ -32,7 +32,7 @@ injector_config()                             ; //This function calls the inject
 
 
 //AUTO CALCULATED VALUES
-float cylDisp = 'disp' / 'cylNum' ;                //Per-cylinder displacement
+float cylDisp = disp / cylNum ;                //Per-cylinder displacement
 
 
 
